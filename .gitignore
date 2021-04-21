@@ -1,0 +1,15 @@
+node_modules/
+.idea/
+.history/
+.vscode/
+tmp/
+yarn.lock
+yarn-error.log
+package-lock.json
+
+dist/
+.nyc_output/
+.DS_Store
+*.log
+.npmrc
+.env

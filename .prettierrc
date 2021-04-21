@@ -1,0 +1,11 @@
+{
+    "extends": [
+      "tslint:latest",
+      "tslint-eslint-rules",
+      "tslint-config-prettier"
+    ],
+    "printWidth": 150,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false
+  }

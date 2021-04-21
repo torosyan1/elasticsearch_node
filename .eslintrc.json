@@ -1,0 +1,70 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:sonarjs/recommended"],
+  "plugins": ["prettier", "sonarjs", "@typescript-eslint", "unicorn"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/extensions": 0,
+    "no-underscore-dangle": 0,
+    "no-trailing-spaces": "off",
+    "key-spacing": 0,
+    "variable-name": "off",
+    "object-curly-newline": "off",
+    "no-param-reassign": "off",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "arrow-parens": "off",
+    "sonarjs/cognitive-complexity": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "arrow-body-style": [2, "as-needed"],
+    "class-methods-use-this": 0,
+    "import/imports-first": 0,
+    "import/newline-after-import": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": 0,
+    "import/no-unresolved": "off",
+    "import/no-webpack-loader-syntax": 0,
+    "import/prefer-default-export": 0,
+    "consistent-return": "off",
+    "no-empty-pattern": "off",
+    "no-restricted-globals": "off",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "indent": [
+        "off",
+        4,
+        {
+          "SwitchCase": 1,
+          "MemberExpression": 1,
+          "flatTernaryExpressions": true,
+          "ignoreComments": true
+        }
+      ],
+    "no-nested-ternary": "off",
+    "max-len": 0,
+    "newline-per-chained-call": 0,
+    "no-console": "off",
+    "no-unused-vars": 2,
+    "no-use-before-define": 0,
+    "no-confusing-arrow": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "modules": true,
+      "sourceType": "module"
+    }
+  }
+}
